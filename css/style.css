@@ -1,0 +1,437 @@
+@charset 'UTF-8'; /* 文字コードの指定 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* Base
+------------------------------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans JP','游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #a8a698;
+}
+a:visited {
+    color: #a8a698;
+}
+a:hover {
+    color: #071e3d;
+}
+a:active {
+    color: #16d6e0;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+    text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+.block-center,
+section .container,
+#skills i {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Font
+------------------------------------------------------------*/
+section h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}
+.notosans,
+section h2,
+#skills h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.uppercase,
+section h2,
+#skills h3 {
+    text-transform: uppercase;
+}
+
+/* Header
+------------------------------------------------------------*/
+a.button-menu {
+    font-size:30px;
+    line-height: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 auto;
+    padding:20px;
+    color: #a8a698;
+}
+.button-menu:visited {
+    color: #a8a698;
+}
+.button-menu:hover,
+.button-menu:active {
+    color: #fff;
+    background-color: #071e3d;
+}
+header {
+    background-color: #f1f0e9;
+}
+header .button-area {
+    width:100%;
+    text-align: right;
+}
+header .profile {
+    display: flex;
+    justify-content: space-between;
+
+    width:70%;
+    margin: 0 auto;
+    padding:50px 0;
+}
+header .profile_text {   
+    width: 70%;
+    padding: 60px 0;
+}
+
+.site-title  {
+    text-align: left;
+}
+
+
+
+header .profile_photo {
+    width: 30%;
+    padding: 60px 0;
+}
+header .site-title {
+    font-size: 20px;
+    font-size: 2.0rem;
+    letter-spacing: 0.3rem;
+    line-height: normal;
+    color: #a8a698;
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+header .site-title span {
+    font-size: 56px;
+    font-size: 5.6rem;
+    letter-spacing: 0.5rem;
+    display: block;
+    color: #071e3d;
+}
+header .profile-icon {
+    margin:40px auto;
+    border-radius: 50%;
+}
+header p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height:1.8em;
+    margin: 0;
+}
+
+/* Header contact部分
+------------------------------------------------------------*/
+header ul.contact {
+    margin-top:20px;
+    padding: 0;
+}
+header ul.contact li {
+    font-size: 28px;
+    font-size: 2.8rem;
+    display: inline-block;
+    box-sizing: border-box;
+    margin:0 15px 0 0;
+
+    text-align: center;
+    vertical-align: top;
+}
+header ul.contact li:last-child {
+    margin-right: 0;
+}
+header ul.contact .mail,
+header ul.contact .twitter,
+header ul.contact .instagram {
+    font-size: 28px;
+    font-size: 2.8rem;
+}
+header ul.contact .twitter i {
+    margin-left: 2px;
+}
+header ul.contact li.button-more a {
+    display: block;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.6em;
+    width: 150px;
+    height: 40px;
+    margin-right:25px;
+    padding: 10px 0 0 0;
+    color: #fff;
+    border-radius: 25px;
+    background-color: #071e3d;
+}
+header ul.contact li.button-more a:hover {
+    text-decoration: none;
+}
+header ul.contact a {
+    display: block;
+    line-height:0;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #a8a698;
+}
+header ul.contact a:hover {
+    background-color: #071e3d;
+}
+
+section {
+    padding: 60px 0;
+}
+section .container {
+    width: 90%;
+}
+section h2 {
+    font-size: 36px;
+    font-size: 3.6rem;
+    letter-spacing: 0.5rem;
+}
+
+.skills {
+    background-color: #ffffff;
+}
+.skills .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:40px;
+}
+.skills h2 {
+    margin: 0 0 60px 0;
+    font-weight: 300;
+    color: #a8a698;
+}
+.skills .skills-box {
+    box-sizing: border-box;
+    box-shadow: -10px 10px 14px rgba(0,0,0,0.25);
+    width: 32%;
+    padding:30px 40px 50px 40px;
+    color: #ffffff;
+}
+.skills .skills-box.color-a {
+    background-color: #4b20da;
+}
+.skills .skills-box.color-b {
+    background-color: #15c3d3;
+}
+.skills .skills-box.color-c {
+    background-color: #d94665;
+}
+.skills .skills-box-head {
+    list-style: none;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.skills .skills-box-head span {
+    float: left;
+}
+.skills i {
+    font-size: 25px;
+    font-size: 2.5rem;
+    margin: 0 20px 5px 0;
+    padding-top: 15px;
+    text-align: center;
+    color: #fff;
+    
+}
+.skills h3 {
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height:2em;
+    margin: 0;
+}
+.skills p {
+    width: 100%;
+    line-height:2em;
+}
+
+.works {
+    padding-bottom:90px;
+    background-color: #f1f0e9;
+}
+.works h2 {   
+    font-weight: 300;
+    color: #a8a698;
+    margin: 0 0 60px 0;
+}
+.works a.works-box {   
+    float: left;        
+    box-shadow: -10px 10px 12px rgba(0,0,0,0.06);
+    width: 32%;
+    height: 100%;
+    margin: 0 2% 40px 0;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+.works a.works-box:nth-of-type(3n) {
+    margin: 0 0 40px 0;
+}
+.works::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.works a.works-box  {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+.works a.works-box .works-box-inner {
+    padding: 10px 20px;
+    height:80px;
+}
+.works a.works-box .works-box-inner h3 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #555555;
+    margin: 0 0 5px;
+}
+
+.works a.works-box .works-box-inner small {
+    position: absolute;
+    font-size: 10px;
+    font-size: 1rem;
+    bottom: 10px;
+    display: block;
+    margin-bottom:5px;
+    color: #555555;
+}
+
+.works a.works-box:hover {
+    background-color: #071e3d;
+    color: #ffffff;
+}
+
+
+.works a.works-box:hover .works-box-inner h3 {
+    color: #ffffff;
+}
+.works a.works-box img {
+    max-width: 100%;
+}
+
+footer {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #a8a698;
+}
+
+
+/*career-----*/
+
+section.career {
+    padding: 20px 0 30px 0;
+    margin: 40px 0 50px 0;
+}
+
+section.career .container {
+    width: 62%;
+}
+
+.career {
+    background-image: url(../images/line.png);
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+}
+
+.career h2 {
+    margin: 0;
+    font-weight: 300;
+    color: #a8a698;
+}
+
+.career .career-box {
+    position: relative;
+    margin-top: 50px;
+}
+
+.career .career-icon {
+    position: absolute;
+    left: -7%;
+    font-size: 36px;
+    font-size: 3.6rem;
+}
+
+.career .career-box-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted #a8a698;
+}
+
+.career .career-box-head .title {
+    width: 50%;
+}
+
+.career .career-box-head .title h3 {
+    margin: 0 0 5px;
+    font-size: 36px;
+    font-size: 3.0rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #555555;
+}
+
+.career .career-box-head .title h3 span {
+    margin: 0 0 5px;
+    font-size: 26px;
+    font-size: 2.0rem;
+    font-weight: 500;
+    color: #555555;
+}
+
+.career .career-box-head .date {
+    padding-top: 50px;
+    width: 50%;
+    font-size: 26px;
+    font-size: 2.0rem;
+    font-weight: 500px;
+    color: #a8a698;
+    text-align: right;
+}
+
+.career .career-box-head .date i {
+    margin-right: 15px;
+}
+
+.career .career-box p {
+    display: block;
+    width: 70%;
+    padding-top: 10px;
+}
